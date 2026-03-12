@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 股票技术分析仪表盘</title>
+    <!-- CDN 依赖 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 本地样式（相对路径） -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<nav class="navbar">
+    <div class="container-fluid px-4">
+        <span class="navbar-brand"><i class="fas fa-chart-line"></i> 股票技术分析仪表盘</span>
+        <span class="text-secondary small" id="statusText">加载中...</span>
+    </div>
+</nav>
+
+<!-- 控制面板 -->
+<div class="controls-bar">
+    <div class="container-fluid px-4">
+        <div class="d-flex align-items-center gap-3 flex-wrap">
+            <!-- 日期选择 -->
+            <div class="d-flex align-items-center gap-2">
+                <label class="text-secondary small" style="white-space:nowrap"><i class="fas fa-calendar-alt me-1"></i>日期</label>
+                <select class="form-select form-select-sm" id="dateSelect" style="width: 160px;"></select>
+            </div>
+            <!-- 市场切换 -->
+            <div class="d-flex gap-2" id="marketBtns">
+                <button class="btn-market active" data-market="cn">🇨🇳 A股/港股</button>
+                <button class="btn-market" data-market="us">🇺🇸 美股</button>
+            </div>
+            <!-- 搜索 -->
+            <div class="ms-auto">
+                <input type="text" class="form-control form-control-sm" id="searchInput"
+                       placeholder="搜索股票代码或名称..." style="width: 220px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 主内容 -->
+<div class="container-fluid px-4 py-3">
+    <!-- 加载态 -->
+    <div id="loadingState" class="loading-overlay">
+        <div class="spinner"></div>
+        <p>正在加载分析数据...</p>
+    </div>
+
+    <!-- 空状态 -->
+    <div id="emptyState" class="empty-state" style="display:none;">
+        <i class="fas fa-chart-bar"></i>
+        <h5>暂无报告数据</h5>
+        <p class="text-muted">请先运行 build.py 生成静态数据</p>
+    </div>
+
+    <!-- 数据内容 -->
+    <div id="mainContent" style="display:none;">
+        <!-- 信号汇总表 -->
+        <div class="table-responsive" style="max-height: 50vh; overflow-y: auto;" id="tableWrapper">
+            <table class="summary-table" id="summaryTable">
+                <thead>
+                    <tr>
+                        <th style="min-width:180px">股票</th>
+                        <th style="min-width:100px">收盘价</th>
+                        <th style="min-width:80px">MA20偏离</th>
+                        <th style="min-width:70px">MACD</th>
+                        <th style="min-width:70px">RSI</th>
+                        <th style="min-width:200px">关键信号</th>
+                        <th style="min-width:80px">评级</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- 详情面板 -->
+        <div id="detailPanel" class="detail-panel" style="display:none;">
+            <!-- 标题区 -->
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+                <div>
+                    <h3 id="detailTitle" class="mb-1"></h3>
+                    <div id="detailVerdict" class="verdict-tag mt-2" style="display:none;"></div>
+                </div>
+                <div class="text-end">
+                    <div class="price-val" style="font-size: 2rem;" id="detailPrice"></div>
+                    <div id="detailChange" class="small"></div>
+                </div>
+            </div>
+
+            <!-- 技术指标网格 -->
+            <div class="section-title"><i class="fas fa-tachometer-alt me-2"></i>技术指标</div>
+            <div class="indicator-grid" id="indicatorGrid"></div>
+
+            <!-- 信号列表 -->
+            <div class="section-title"><i class="fas fa-bell me-2"></i>交易信号</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="text-secondary mb-2">📈 日线信号</h6>
+                    <div id="dailySignals"></div>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-secondary mb-2">📊 周线信号</h6>
+                    <div id="weeklySignals"></div>
+                </div>
+            </div>
+
+            <!-- K线形态 -->
+            <div id="candleSection" style="display:none;">
+                <div class="section-title"><i class="fas fa-fire me-2"></i>K线形态</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6 class="text-secondary mb-2">日线形态</h6>
+                        <div id="dailyCandles"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-secondary mb-2">周线形态</h6>
+                        <div id="weeklyCandles"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 图表区 -->
+            <div class="section-title"><i class="fas fa-chart-area me-2"></i>K线图表</div>
+            <div class="chart-tabs" id="chartTabs">
+                <button class="chart-tab active" data-chart="daily">日线 (6M)</button>
+                <button class="chart-tab" data-chart="weekly">周线 (2Y)</button>
+            </div>
+            <div class="chart-image-container" id="chartContainer">
+                <div class="no-chart">选择股票以查看图表</div>
+            </div>
+
+            <!-- 基本面 -->
+            <div id="fundamentalSection" style="display:none;">
+                <div class="section-title"><i class="fas fa-briefcase me-2"></i>基本面</div>
+                <div id="fundamentalData"></div>
+            </div>
+
+            <!-- 新闻 -->
+            <div id="newsSection" style="display:none;">
+                <div class="section-title"><i class="fas fa-newspaper me-2"></i>最新资讯</div>
+                <div id="newsData"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 图片弹出层 -->
+<div class="image-modal-overlay" id="imageModal" onclick="this.classList.remove('visible')">
+    <img id="imageModalImg" src="" alt="">
+</div>
+
+<!-- 前端逻辑（相对路径） -->
+<script src="js/app.js"></script>
+
+</body>
+</html>

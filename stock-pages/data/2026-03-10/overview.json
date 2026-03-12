@@ -1,0 +1,58 @@
+{
+  "date": "2026-03-10",
+  "markets": {
+    "us": {
+      "stocks": [
+        {
+          "symbol": "RKLB",
+          "name": "Rocket Lab",
+          "market": "us",
+          "error": "数据获取失败(yfinance限速)"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon",
+          "market": "us",
+          "error": "数据获取失败(yfinance限速)"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple",
+          "market": "us",
+          "error": "数据获取失败(yfinance限速)"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla",
+          "market": "us",
+          "error": "数据获取失败(yfinance限速)"
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel",
+          "market": "us",
+          "error": "数据获取失败(yfinance限速)"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "Nvidia",
+          "market": "us",
+          "error": "数据获取失败(yfinance限速)"
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Google",
+          "market": "us",
+          "error": "数据获取失败(yfinance限速)"
+        },
+        {
+          "symbol": "SMR",
+          "name": "NuScale Power",
+          "market": "us",
+          "error": "数据获取失败(yfinance限速)"
+        }
+      ],
+      "count": 8
+    }
+  }
+}
