@@ -8,15 +8,10 @@
   },
   {
     "date": "2026-03-11",
-    "markets": [
-      "cn",
-      "us"
-    ]
+    "markets": []
   },
   {
     "date": "2026-03-10",
-    "markets": [
-      "us"
-    ]
+    "markets": []
   }
 ]

@@ -7,12 +7,12 @@
 |------|--------|---------|------|-----|---------|------|
 | Rocket Lab(RKLB) | 71.96 | +1.9% | 金叉📈 | 49 | RSI底🔔(02-12) | 🟢强多 |
 | Amazon(AMZN) | 212.65 | +1.9% | 金叉📈 | 47 | - | 🔵偏多 |
-| Apple(AAPL) | 260.81 | -1.3% | 死叉📉 | 45 | MACD顶⚠️(11-11) RSI顶⚠️(11-11) RSI顶⚠️(10-30) MACD顶⚠️(12-02) | 🟡偏空 |
+| Apple(AAPL) | 260.81 | -1.3% | 死叉📉 | 45 | MACD顶⚠️(12-02) MACD顶⚠️(11-11) RSI顶⚠️(10-30) RSI顶⚠️(11-11) | 🟡偏空 |
 | Tesla(TSLA) | 407.82 | +0.0% | 金叉📈 | 48 | MACD顶⚠️(01-22) RSI顶⚠️(11-03) MACD顶⚠️(11-03) | 🟢强多 |
 | Intel(INTC) | 47.98 | +5.0% | 金叉📈 | 56 | RSI顶⚠️(10-28) MACD顶⚠️(10-28) | 🟢强多 |
 | Nvidia(NVDA) | 186.03 | +0.2% | 死叉📉 | 51 | MACD底🔔(02-27) | 🟢强多 |
-| Google(GOOG) | 308.42 | +0.5% | 金叉📈 | 47 | RSI底🔔(10-10) MACD顶⚠️(02-02) RSI顶⚠️(02-02) | 🟢强多 |
-| NuScale Power(SMR) | 12.38 | -6.3% | 金叉📈 | 39 | MACD底🔔(12-31) MACD底🔔(12-17) RSI底🔔(02-12) RSI顶⚠️(01-22) | 🔵偏多 |
+| Google(GOOG) | 308.42 | +0.5% | 金叉📈 | 47 | MACD顶⚠️(02-02) RSI底🔔(10-10) RSI顶⚠️(02-02) | 🟢强多 |
+| NuScale Power(SMR) | 12.38 | -6.3% | 金叉📈 | 39 | RSI顶⚠️(01-22) RSI底🔔(02-12) MACD底🔔(12-31) MACD底🔔(12-17) | 🔵偏多 |
 
 ## 各股详细分析
 
@@ -31,13 +31,9 @@
   信号：价格站上MA20✅ | 价格站上MA60✅ | MACD死叉/绿柱📉 | RSI中性(56) | MACD顶背离⚠️(07-18) | RSI顶背离⚠️(01-24) | RSI顶背离⚠️(10-17)
   K线形态：📗看多: 看涨吞没(01-02)  📕看空: 看跌孕线(01-23)、射击之星(12-26)
 
-**📰 最新资讯**
-- **Rocket Lab Stock (RKLB) Hits a New 52 Week …**
-  2025年12月22日 · Rocket Lab RKLB +2.54% stock hit a new 52-week high on Monday due to rising investor confidence about the 
-- **Is It Too Late To Consider Rocket Lab (RKLB) After Its Huge One …**
-  2 天之前 · If you are wondering whether Rocket Lab's current share price still makes sense after such a strong run, you are
-- **Rocket Lab (RKLB) Projected to Post Quarterly Earnings on …**
-  2026年2月19日 · Rocket Lab (NASDAQ:RKLB - Get Free Report) will likely be announcing its Q4 2025 results after the market c
+**💼 基本面**
+- 评级 Buy  |  目标价 $69.18
+- 当前 71.96 vs 目标价 69.18（潜在空间 -3.9%）
 
 
 ### Amazon (AMZN.US)  🔵偏多
@@ -59,14 +55,6 @@
 - 评级 Strong Buy  |  目标价 $279.57
 - 当前 212.65 vs 目标价 279.57（潜在空间 +31.5%）
 
-**📰 最新资讯**
-- **Amazon (AMZN) Q4 earnings report 2025 - CNBC**
-  2026年2月6日 · Amazon reports EPS miss, revenue beat in Q4 earnings Amazon shares plunged 8% Friday after the company poste
-- **Amazon.com (AMZN) Earnings Date and Reports 2026**
-  6 天之前 · When is Amazon.com's next earnings announcement? View the latest AMZN earnings date, analysts forecasts, earning
-- **Amazon.com Announces Fourth Quarter Results**
-  2026年2月5日 · Amazon.com, Inc. (NASDAQ: AMZN) today announced financial results for its fourth quarter ended December 31, 
-
 
 ### Apple (AAPL.US)  🟡偏空
 **收盘：260.81 USD**
@@ -86,14 +74,6 @@
 **💼 基本面**
 - 评级 Buy  |  目标价 $297.1
 - 当前 260.81 vs 目标价 297.10（潜在空间 +13.9%）
-
-**📰 最新资讯**
-- **Apple reports first quarter results - Apple**
-  2026年1月29日 · CUPERTINO, CALIFORNIA Apple today announced financial results for its fiscal 2026 first quarter ended Decem
-- **Apple (AAPL) earnings report Q1 2026 - CNBC**
-  2026年1月30日 · Apple reported fiscal first-quarter earnings on Thursday that surpassed expectations, with revenue soaring 
-- **Apple AAPL Q1 2026 Earnings Call Transcript**
-  Apple AAPL Q1 2026 Earnings Call Transcript Date Thursday, January 29, 2026 at 5 p.m. ET Call participants Chief Executi
 
 
 ### Tesla (TSLA.US)  🟢强多
@@ -115,14 +95,6 @@
 - 评级 Hold  |  目标价 $396.15
 - 当前 407.82 vs 目标价 396.15（潜在空间 -2.9%）
 
-**📰 最新资讯**
-- **Tesla (TSLA) Earnings Date and Reports 2026 - MarketBeat**
-  6 天之前 · When is Tesla's next earnings announcement? View the latest TSLA earnings date, analysts forecasts, earnings his
-- **Tesla Investor Relations**
-  2 天之前 · Tesla's mission is to accelerate the world's transition to sustainable energy. Today, Tesla builds not only all-
-- **Tesla, Inc. (TSLA) Earnings Report Date | Nasdaq**
-  2026年1月25日 · Earnings announcement* for TSLA Jan 28, 2026 Tesla, Inc. Common Stock is expected* to report earnings on 01
-
 
 ### Intel (INTC.US)  🟢强多
 **收盘：47.98 USD**
@@ -142,14 +114,6 @@
 **💼 基本面**
 - 评级 Hold  |  目标价 $43.6
 - 当前 47.98 vs 目标价 43.60（潜在空间 -9.1%）
-
-**📰 最新资讯**
-- **Intel (INTC) earnings report Q4 2025 - CNBC**
-  2026年1月23日 · Intel reported fourth-quarter earnings Thursday that beat Wall Street expectations but offered soft guidanc
-- **Intel (INTC) Earnings Date and Reports 2026**
-  2 天之前 · When is Intel's next earnings announcement? View the latest INTC earnings date, analysts forecasts, earnings his
-- **Intel Corporation Common Stock (INTC) Earnings - Nasdaq**
-  2026年1月7日 · Earnings announcement* for INTC Jan 22, 2026 Intel Corporation Common Stock is expected* to report earnings 
 
 
 ### Nvidia (NVDA.US)  🟢强多
@@ -171,14 +135,6 @@
 - 评级 Strong Buy  |  目标价 $263.29
 - 当前 186.03 vs 目标价 263.29（潜在空间 +41.5%）
 
-**📰 最新资讯**
-- **NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026**
-  2026年2月26日 · NVIDIA (NASDAQ: NVDA) today reported record revenue for the fourth quarter ended January 25, 2026, of $68.1
-- **NVIDIA 发布 2026 财年第三季度财务报告 | NVIDIA 英伟达博客**
-  NVIDIA 于太平洋时间 11 月 19 日下午 2 点（东部时间下午 5 点）与分析师和投资者召开电话会议，讨论公司 2026 财年第三季度的财务报告以及当前财务前景。 本次电话会议于 NVIDIA 投资者关系网站上 …
-- **NVIDIA (NVDA) Q4 2026 Earnings Call Transcript - The Motley Fool**
-  NVIDIA (NVDA) Q4 2026 Earnings Call Transcript DATE Wednesday, Feb. 25, 2026 at 5 p.m. ET CALL PARTICIPANTS President an
-
 
 ### Google (GOOG.US)  🟢强多
 **收盘：308.42 USD**
@@ -199,14 +155,6 @@
 - 评级 Strong Buy  |  目标价 $351.82
 - 当前 308.42 vs 目标价 351.82（潜在空间 +14.1%）
 
-**📰 最新资讯**
-- **Alphabet (GOOGL) Q4 2025 earnings - CNBC**
-  2026年2月5日 · Alphabet beat on the top and bottom lines in its fourth-quarter earnings report, and said it expects to sign
-- **Alphabet (GOOGL) Earnings Date and Reports 2026 - MarketBeat**
-  3 天之前 · When is Alphabet's next earnings announcement? View the latest GOOGL earnings date, analysts forecasts, earnings
-- **Alphabet down premarket after Q4 earnings beat. What's …**
-  2026年2月5日 · Alphabet shares closed flat on Thursday after the company said it would hugely increase its AI spending in 2
-
 
 ### NuScale Power (SMR.US)  🔵偏多
 **收盘：12.38 USD**
@@ -226,14 +174,6 @@
 **💼 基本面**
 - 评级 Hold  |  目标价 $20.5
 - 当前 12.38 vs 目标价 20.50（潜在空间 +65.6%）
-
-**📰 最新资讯**
-- **SMR Q4 2025 Earnings Report on 2/26/2026 - MarketBeat**
-  2026年2月27日 · NuScale Power announced their Q4 2025 earnings on 2/26/2026. View SMR's earnings results, press release, an
-- **Quarterly Results - NuScale Power**
-  2022年6月3日 · View and download quarterly earnings reports for NuScale Power Corporation (NYSE:SMR).
-- **NuScale Power Corporation (SMR) Earnings Dates & Report**
-  6 天之前 · NuScale Power Corporation (SMR) earnings report: revenue, EPS, surprise, history, news and analysis.
 
 
 ---
