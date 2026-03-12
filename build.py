@@ -16,6 +16,9 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SCRIPT_DIR, 'data')
 
 # 已知的指数信息（与 app.py 保持一致）
+# 需要从界面中排除的股票（symbol 列表）
+EXCLUDED_SYMBOLS = {'00085'}  # 中电华大
+
 KNOWN_INDICES = {
     # CN 指数
     'sh000001': {'name': '上证指数', 'market': 'cn', 'currency': 'CNY'},
@@ -134,6 +137,9 @@ def build_overview(date_str, date_dir):
         # 再添加个股
         if results:
             for r in results:
+                # 跳过排除列表中的股票
+                if r.get('symbol', '') in EXCLUDED_SYMBOLS:
+                    continue
                 if r.get('error'):
                     stocks.append({
                         'symbol': r.get('symbol', ''),
